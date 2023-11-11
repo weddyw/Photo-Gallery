@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    
+}
+html {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0 auto;
+    width: 485px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+header h1 {
+    text-align: center;
+    line-height: 1.1em;
+}
+nav {
+    background-color: #000000;
+    padding: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+}
+li:last-child {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 5px;
+    border: 2px solid #ffffff;
+}
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+figcaption {
+    position: relative;
+    text-transform: capitalize;
+}
+.midbot {
+    bottom: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.midtop {
+    bottom: 270px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.midtall {
+    bottom: 630px;
+    text-transform: uppercase;
+}
+.black {
+    color: #000000;
+    font-weight: bold;
+}
+.contact {
+    background-color: #000000;
+    color: #ffffff;
+}
+.contact h2 {
+    padding-top: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.contact p {
+    text-align: center;
+}
+label, input {
+    text-transform: uppercase;
+}
+label {
+    padding-left: 55px;
+}
+input {
+    margin-bottom: 20px;
+    line-height: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+::placeholder {
+    padding-left: 6px;
+    color: #007d7b;
+    font-weight: bold;
+    opacity: .8;
+}
+button {
+    margin: 0 auto;
+    width: 45%;
+    background-color: #007d7b;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 12px;
+    line-height: 30px;
+    border: none;
+    margin-bottom: 50px;
+}
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+p {
+    font-size: 1.25em;
+    margin: 10px;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+nav a {
+    font-size: 1.5em;
+}
+h1 {
+    font-size: 3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #007d7b;
+}
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0px 15px 0px;
+}
+@media screen and (min-width: 880px) {
+    body {
+        width: 880px;
+    }
+    header h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
+    .images {
+        grid-template-columns: 1fr 1fr;
+    }
+    label {
+        padding-left: 95px;
+    }    
+}
+@media screen and (min-width: 1300px) {
+    body {
+        width: 1300px;
+    }
+    nav ul {
+        justify-content: right;
+    }
+    .images {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    label {
+        padding-left: 135px;
+    }
+}
